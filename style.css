@@ -1,0 +1,373 @@
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+}
+
+header.container {
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    box-shadow: 0px 10px 20px 0px #050505;
+}
+
+.headBio {
+    display: flex;
+    padding: 0px 100px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: brown;
+    position: relative;
+    z-index: 800;
+}
+
+body {
+    background: #eeeeee
+}
+
+.logo {
+    padding: 20px 10px;
+    /* background-color: green; */
+    width: auto;
+    box-sizing: border-box;
+    position: relative;
+}
+
+h1.textLogo {
+    border-bottom: 3px white solid;
+    font-size: 4rem;
+    color: #333333;
+    text-transform: capitalize;
+    position: relative;
+    z-index: 1;
+    padding-left: 20px;
+}
+
+span.text_logo_color {
+    text-transform: uppercase;
+    color: white;
+    margin-left: 10px;
+}
+
+.navbar {
+    display: flex;
+    /* gap: 10px; */
+}
+
+li.navbar_list {
+    text-transform: uppercase;
+    padding: 41px 30px;
+    color: white;
+    transition: 0.3s ease-out;
+    display: flex;
+    gap: 10px;
+    font-size: 2rem;
+    align-items: center;
+}
+
+li.navbar_list:hover {
+    /* border-bottom: 2px solid white; */
+    font-weight: bold;
+    transition: 0.3s ease-in;
+    background-color: #333333;
+    border-bottom: white 3px solid;
+}
+
+h1.articleHead {
+    color: #333333;
+    text-transform: capitalize;
+    font-size: 6rem;
+}
+
+span {
+    text-transform: uppercase;
+    color: brown;
+}
+
+main.mainPortfolio {
+    width: 100%;
+    position: relative;
+    padding-top: 150px;
+}
+
+p.teaserHead {
+    color: #333333;
+    text-transform: capitalize;
+    font-size: 2rem;
+}
+
+article.articleTeaser {
+    padding: 20px;
+}
+
+article.articleContent {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px 150px;
+}
+
+h2 {
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+h2#odd {
+    position: absolute;
+    color: white !important;
+    top: 20px;
+    left: 40px;
+}
+
+h2#even {
+    position: absolute;
+    color: white !important;
+    top: 20px;
+    right: 40px;
+}
+
+section {
+    background-color: white;
+    margin-top: 20px !important;
+    /* display: flex; */
+    /* width: 80%; */
+    margin: auto;
+    box-shadow: 9px 8px 9px 0px #333333;
+    transition: 0.3s ease-out;
+    border-radius: 20px;
+    border: 4px solid #dadadab8;
+    ;
+    /* height: 430px; */
+}
+
+section:hover {
+    box-shadow: 9px 8px 9px 0px #000000;
+    transition: 0.3s ease-in;
+}
+
+img.img {
+    width: 100%;
+    /* padding: 10px; */
+    border-radius: 30px;
+    float: left;
+}
+
+.imgLogo {
+    width: 30%;
+    position: absolute;
+    top: 12px;
+    left: 2px;
+
+}
+
+/* #story img {
+    float: right;
+} */
+
+h2.titleContent {
+    color: black;
+    /* text-align: start; */
+    font-size: 3rem;
+    position: absolute;
+    border-bottom: 3px solid white;
+}
+
+#overview p,
+#story p,
+#politics p {
+    /* padding: 20px; */
+    text-align: justify;
+    line-height: 1.9;
+    font-size: 1.8rem;
+    /* padding-top: 20px; */
+    color: #333333;
+    text-shadow: 0 0 black;
+    height: 531px;
+    overflow: scroll;
+    scroll-behavior: smooth;
+}
+
+.teaserContent {
+    width: 50%;
+}
+
+.content {
+    padding: 30px;
+    position: relative;
+    display: flex;
+    gap: 50px;
+}
+
+.imgContent {
+    position: relative;
+    align-self: flex-start;
+    width: 50%;
+    box-shadow: 9px 8px 9px 0px #333333;
+    border-radius: 30px;
+}
+
+.moreButton {
+    text-align: -webkit-right;
+    cursor: pointer;
+    font-size: 1.1rem;
+    padding: 10px 0;
+    align-items: center;
+    /* display: none;
+} */
+}
+
+small {
+    padding: 10px;
+    box-sizing: border-box;
+    background: brown;
+    color: white;
+    border-radius: 100px;
+    box-shadow: 4px 5px 9px 0px #999999;
+    gap: 10px;
+    display: flex;
+    width: fit-content;
+    font-size: 1.5rem;
+    align-items: center;
+}
+
+
+footer.footerContent {
+    background-color: brown;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+footer.footerContent p {
+    color: white;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 1.8rem;
+}
+
+.navMobile {
+    width: 40px;
+    display: none;
+}
+
+li.hamburger {
+    color: white;
+}
+
+.fa-solid,
+.fas {
+    font-weight: 900;
+    font-size: 2rem;
+    align-self: center;
+}
+
+small.teaserHead {
+    font-size: 2rem;
+    text-transform: capitalize;
+    background: none;
+    color: #333333;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+@media only screen and (max-width: 1440px) {
+    .headBio {
+        padding: 0px 40px;
+    }
+
+    h1.textLogo {
+        font-size: 2rem;
+    }
+
+    li.navbar_list {
+        font-size: 1.2rem;
+        padding: 40px 30px;
+    }
+
+    p {
+        font-size: 1.6rem;
+    }
+
+    small {
+        font-size: 1.1rem;
+    }
+
+    h1.articleHead {
+        font-size: 4rem;
+    }
+
+    #overview p,
+    #story p,
+    #politics p {
+        height: 243px;
+            line-height: 1.5;
+    font-size: 1.7rem;
+    }
+    article.articleContent {
+    padding: 20px 100px;
+    gap: 50px;
+}
+}
+
+@media only screen and (max-width: 1024px) {
+    .headBio {
+        padding: 0px 30px;
+    }
+
+    h1.textLogo {
+        font-size: 2rem;
+    }
+
+    li.navbar_list {
+        font-size: 1rem;
+        padding: 40px 30px;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+
+
+    small {
+        font-size: 1.1rem;
+    }
+
+    h1.articleHead {
+        font-size: 3rem;
+    }
+
+    p.teaserHead {
+        font-size: 1.1rem
+    }
+
+    h2#odd,
+    h2#even {
+        font-size: 2rem;
+
+    }
+
+    h2#even {
+        right: 20px;
+    }
+
+    h2#odd {
+        left: 20px;
+    }
+
+    .navbar {
+        display: none;
+    }
+
+    .navMobile {
+        display: block;
+    }
+    main.mainPortfolio {
+    padding-top: 100px;
+}
+small.teaserHead {
+    font-size: 1.4rem;
+    padding: 10px 0;
+}
+}
